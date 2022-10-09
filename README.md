@@ -4,14 +4,21 @@
 
 *{
     margin: 0;
-    padding: 0;
+    
     text-decoration: none;
     list-style: none;
+    
+    
+    
 }
 
 body{
-    background-color: #F5F5F5;
-}
+    
+    background-color: #f5f5f5;
+    
+
+}    
+
 a, li{
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -27,11 +34,13 @@ a, li{
     align-items: center;
     padding: .5rem 7rem;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    
 }
 
 .nav_menu ul{
     display: flex;
     align-items: center;
+    
 }
 
 .nav_menu li{
@@ -68,29 +77,38 @@ li:last-child:hover{
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+
+
+/*Barra Scroll*/
+
+.barra::-webkit-scrollbar{
+    width: 7px;
+}
+
+.barra::-webkit-scrollbar-thumb{
+    background: #111;
+    border-radius: 5px;
+}
+
 /*Fecha*/
 
-form{
-    padding: 30px 10px 10px 75px;
-    color: #111;
+.Fechas {
     position: fixed;
-    font-size: 1em;
-   border-radius: 10px;
-    
+    padding: 15px 30px;
 }
 
 /*Barra de busqueda*/
 
 .buscar {
-    position: absolute;
-    padding: 25px 1280px;
+    position: fixed;
+    padding: 130px 35px;
 }
 
 .buscar input{
    width: 0px;
    height: 20px;
    padding: 0 20px;
-   font-size: 18px;
+   font-size: 15px;
    color: black;
    outline: none;
    border: 1px solid silver;
@@ -100,8 +118,8 @@ form{
 
 .btn {
     position: absolute;
-    top: 15px;
-    right: 1275px;
+    top: 120px;
+    right: 30px;
     background: #3CB371;
     width: 55px;
     height: 55x;
@@ -115,7 +133,7 @@ form{
 }
 
 .buscar:hover input{
-    width: 200px;
+    width: 150px;
 }
 
 .buscar input:focus{
@@ -127,19 +145,24 @@ form{
 .wrap {
     width: 90%;
     max-width: 1000px;
-    margin: 10px 15px 5px 220px;
-    
+    margin: 5px 15px 5px 220px;
+   
 }
+
 
 
 .formulario {
     padding: 20px;
     border-bottom: 1px solid #1E90FF;
+    
 }
 
 .formulario input[type="checkbox"]{
     display: none;
+   
+
 }
+
 
 .formulario .checkbox label{
     color: #111;
@@ -152,6 +175,8 @@ form{
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    
+    
 }
 
 .formulario .checkbox label:hover {
