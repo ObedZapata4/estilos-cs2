@@ -9,7 +9,6 @@
     list-style: none;
     
     
-    
 }
 
 body{
@@ -79,16 +78,6 @@ li:last-child:hover{
 
 
 
-/*Barra Scroll*/
-
-.barra::-webkit-scrollbar{
-    width: 7px;
-}
-
-.barra::-webkit-scrollbar-thumb{
-    background: #111;
-    border-radius: 5px;
-}
 
 /*Fecha*/
 
@@ -141,6 +130,67 @@ li:last-child:hover{
 }
 
 /*Checkbox*/
+
+.bloques{
+    width: 100%;
+}
+
+.temp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: #f5f5f5;
+}
+
+.nav_bloques_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+
+.list_inside {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.nav_bloques {
+    color: #111;
+    text-decoration: none;
+}
+
+.list--click {
+    cursor: pointer;
+}
+
+.list_button--click {
+   
+   
+    width: 100%;
+    margin: 5px;
+}
+
+.list_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+
+.list_show {
+    width: 100%;
+    margin-left: auto;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+.arrow .list_arrow{
+    transform: rotate(180deg);
+    
+}
 
 .wrap {
     width: 90%;
